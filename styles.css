@@ -62,6 +62,11 @@ table {
 html{
     background-color: var(--t-tiff);
 }
+body{
+    margin: 0 auto;
+    background-color: var(--smoke);
+    width: 414px;
+}
 h1{
     font-size: 40px;
     font-family: var(--fonts-b);
@@ -88,6 +93,9 @@ dt{
     font-weight: bold;
 }
 /*--------------------Header--------------------*/
+header{
+
+}
 /*--------------------Main--------------------*/
 /*--------------------Footer--------------------*/
 /*--------------------Media Queries--------------------*/
