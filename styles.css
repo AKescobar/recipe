@@ -109,6 +109,10 @@ nav label{
     position: absolute;
     left: 583px;
 }
+nav li:nth-child(n+2){
+    position: relative;
+    top: 25px;
+}
 nav ul {
     display: flex;
     max-height: 0;
