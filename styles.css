@@ -101,6 +101,10 @@ header{
 nav{
 
 }
+nav a{
+    text-decoration: none;
+    color: var(--night);
+}
 nav h2{
     display: none;
 }
@@ -110,7 +114,6 @@ nav label{
     padding: 20px;
     background-color: white;
 }
-nav 
 nav li:nth-child(n+2){
     position: relative;
     top: 25px;
@@ -151,22 +154,20 @@ nav li:first-of-type{
 }
 nav li:last-of-type{
     position: absolute;
-    top: 20px;
-    left: 888px;
+    top: 0;
+    left: 884px;
     background-color: white;
-}
-nav svg:last-of-type{
-    color: var(--flame);
+    padding: 10px 10px 15px 12px;
 }
 #search input, #search button{
-    position: absolute;
+    position: relative;
     top: 90px;
 }
 #search input{
-    left: 600px;
+    left: 50px;
 }
 #search button{
-    left:750px;
+    left: 46px;
 }
 /*--------------------Main--------------------*/
 main{
