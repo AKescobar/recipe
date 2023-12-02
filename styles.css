@@ -105,9 +105,10 @@ nav h2{
     display: none;
 }
 nav label{
-    top: 20px;
     position: absolute;
-    left: 583px;
+    left: 558px;
+    padding: 20px;
+    background-color: white;
 }
 nav 
 nav li:nth-child(n+2){
@@ -142,12 +143,30 @@ nav li:nth-child(n+2){
 nav li:first-of-type{
     position: absolute;
     align-self: center;
-    top: 10px;
+    background-color: var(--flame);
+    padding: 10px 90px 15px;
+}
+[href="#home"]{
+    display: none;
 }
 nav li:last-of-type{
     position: absolute;
     top: 20px;
     left: 888px;
+    background-color: white;
+}
+nav svg:last-of-type{
+    color: var(--flame);
+}
+#search input, #search button{
+    position: absolute;
+    top: 90px;
+}
+#search input{
+    left: 600px;
+}
+#search button{
+    left:750px;
 }
 /*--------------------Main--------------------*/
 main{
