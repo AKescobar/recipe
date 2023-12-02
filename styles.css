@@ -89,6 +89,7 @@ nav a, nav span, menu li, #social li, footer{
 }
 p, dd, li, nav, input{
     font-size: 16px;
+    line-height: 20px;
     font-family: var(--fonts-m);
 }
 dt{
@@ -275,6 +276,8 @@ dl{
 #dishes p:nth-of-type(even){
     font-weight: bold;
 }
+
+/*-------------------------Footer-------------------------*/
 #social{
     background-color: white;
     margin: 20px 0;
@@ -288,21 +291,23 @@ dl{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    width: 414px;
 }
 #social li{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
-/*-------------------------Footer-------------------------*/
 footer{
     order: 3;
-    display: flex;
     background-color: white;
-    align-items: center;
     padding: 20px 0 0;
     margin-top: 41px;
+}
+footer div{
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 footer img{
     order: 1;
@@ -356,7 +361,6 @@ footer img{
         padding: 10px;
         margin: 10px;
     }
-
     #search button{
         position: relative;
         top: -93px;
@@ -367,5 +371,55 @@ footer img{
         position: relative;
         top: -108px;
         left: 335px;
+    }
+    h1{
+        position: relative;
+        top: -46px;
+        left: -276px;
+    }
+    menu{
+        width: 768px;
+        position: absolute;
+        top: 5px;
+        background-color: rgba(242, 242, 242, .5);
+        z-index: 2;
+    }
+    #intro img{
+        position: relative;
+        width: 768px;
+        height: 1152px;
+        top: -43px;
+        z-index: 1;
+    }
+    #intro p{
+        position: relative;
+        padding: 4px 10px 10px;
+        top: -35px;
+    }
+    #detail{
+        position: relative;
+        top: -32px;
+    }
+    dl{
+        justify-content: center;
+    }
+    #recipe{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #ingredient li{
+        margin: 10px 20px
+    }
+    #dishes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #social ul{
+        width: 385px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 55px;
     }
 }
