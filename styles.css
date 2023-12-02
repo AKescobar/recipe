@@ -164,13 +164,13 @@ nav li:last-of-type{
     background-color: white;
     padding: 10px 10px 15px 12px;
 }
-#search{
+.search{
     margin: 20px auto;
 }
-#search input, #search button{
+.search input, .search button{
     position: relative;
 }
-#search input{
+.search input{
     left: 50px;
     border: 3px solid;
     border-color: var(--flame);
@@ -178,14 +178,14 @@ nav li:last-of-type{
     height: 41px;
     top: 75px;
 }
-#search button{
+.search button{
     top: 90px;
     left: 46px;
     height: 41px;
     background: var(--flame);
     border: none;
 }
-#search svg{
+.search svg{
     stroke: var(--smoke);
 }
 
@@ -213,12 +213,12 @@ menu li{
     align-items: center;
     margin: 20px 5px 20px 0;
 }
-#intro img{
+.intro img{
     width: 414px;
     height: 621px;
     padding: 8px 0;
 }
-#intro p{
+.intro p{
     padding: 4px 10px 10px;
 }
 #detail div{
@@ -422,4 +422,9 @@ footer img{
         flex-direction: row-reverse;
         gap: 55px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+
+    
 }
