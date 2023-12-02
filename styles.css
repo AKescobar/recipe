@@ -76,6 +76,7 @@ h1{
 h2{
     font-size: 30px;
     font-family: var(--fonts-b);
+    text-align: center;
 }
 h3{
     font-size: 25px;
@@ -110,9 +111,14 @@ nav h2{
 }
 nav label{
     position: absolute;
-    left: 558px;
-    padding: 20px;
+    left: 559px;
+    padding: 13px 24px;
     background-color: white;
+}
+nav span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 nav li:nth-child(n+2){
     position: relative;
@@ -159,24 +165,64 @@ nav li:last-of-type{
     background-color: white;
     padding: 10px 10px 15px 12px;
 }
+#search{
+    margin: 20px auto;
+}
 #search input, #search button{
     position: relative;
-    top: 90px;
 }
 #search input{
     left: 50px;
+    border: 3px solid;
+    border-color: var(--flame);
+    width: 261px;
+    height: 40px;
+    top: 75px;
 }
 #search button{
+    top: 90px;
     left: 46px;
+    height: 40px;
+    background: var(--flame);
+    border: none;
 }
+#search svg{
+    stroke: var(--smoke);
+}
+
 /*--------------------Main--------------------*/
 main{
+    position: relative;
     order: 2;
+    top: 61px;
+}
+h1{
+    text-align: center;
+}
+menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+menu li{
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 20px 5px 20px 0;
 }
 #intro img{
     width: 414px;
     height: 621px;
+    padding: 8px 0;
 }
+#intro p{
+    padding: 4px 10px 10px;
+}
+
 /*--------------------Footer--------------------*/
 footer{
     order: 3;
