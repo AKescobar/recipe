@@ -109,6 +109,7 @@ nav label{
     position: absolute;
     left: 583px;
 }
+nav 
 nav li:nth-child(n+2){
     position: relative;
     top: 25px;
@@ -117,8 +118,8 @@ nav ul {
     display: flex;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .2s ease-out;
     flex-direction: column;
+    transition: max-height .2s ease-out;
 }
 nav li{
     display: flex;
@@ -128,12 +129,16 @@ nav li{
 li img{
     width: 78px;
 }
-nav input {
-    display: none;
-  }
 nav input:checked ~ ul {
     max-height: 500px;
-  }
+}
+nav input {
+    display: none;
+}
+nav li:nth-child(n+2){
+    position: relative;
+    top: 96px;
+}
 nav li:first-of-type{
     position: absolute;
     align-self: center;
