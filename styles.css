@@ -77,6 +77,7 @@ h2{
     font-size: 30px;
     font-family: var(--fonts-b);
     text-align: center;
+    padding: 15px 0;
 }
 h3{
     font-size: 25px;
@@ -231,17 +232,17 @@ dl{
 }
 #ingredient ul{
     list-style: square;
-    margin: 20px 20px 20px 5px;
+    margin: 0 20px 20px 5px;
 }
 #ingredient li{
     padding-left: 10px;
     margin: 20px;
 }
 #direct ol{
-    margin: 23px;
+    margin: 10px 23px 23px 23px;
 }
 #direct li{
-    padding-left: 10px;
+    padding: 10px ;
 }
 #side{
     background-color: var(--tiff);
@@ -274,9 +275,44 @@ dl{
 #dishes p:nth-of-type(even){
     font-weight: bold;
 }
-
+#social{
+    background-color: white;
+    margin: 20px 0;
+}
+#social h2{
+    display: none;
+}
+#social ul{
+    position: relative;
+    top: 24px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+#social li{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
 /*-------------------------Footer-------------------------*/
 footer{
+    order: 3;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 20px 0 0;
+    margin-top: 41px;
+    flex-direction: column;
+}
+footer img{
+    order: 1;
+    width: 249px;
+    padding: 20px;
+}
+#fir{
+    order: 2;
+}
+#sec{
     order: 3;
 }
 /*-------------------------Media Queries-------------------------*/
