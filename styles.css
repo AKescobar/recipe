@@ -213,12 +213,12 @@ menu li{
     align-items: center;
     margin: 20px 5px 20px 0;
 }
-.intro img{
+#intro img{
     width: 414px;
     height: 621px;
     padding: 8px 0;
 }
-.intro p{
+#intro p{
     padding: 4px 10px 10px;
 }
 #detail div{
@@ -361,13 +361,13 @@ footer img{
         padding: 10px;
         margin: 10px;
     }
-    #search button{
+    .search button{
         position: relative;
         top: -93px;
         left: 331px;
     
     }
-    #search input{
+    .search input{
         position: relative;
         top: -108px;
         left: 335px;
@@ -425,6 +425,39 @@ footer img{
 }
 
 @media screen and (min-width: 1280px) {
-
-    
+    body{
+        width: 1280px;
+    }
+    header{
+        height: 110px;
+    }
+    nav li:first-of-type{
+        left: 0px;
+        top: 50px;
+        padding: 25px 15px;
+    }
+    nav li:last-of-type{
+        left: 1210px;
+        top: 40px;
+        padding: 0;
+    }
+    nav ul{
+        width: 1280px;
+        top: -50px;
+        position: absolute;
+    }
+    li img{
+        width: 52px;
+    }
+    .search input{
+    position: relative;
+    display: block;
+    left: auto;
+    top: 72px;
+    margin: 0 auto;
+    }
+    .search button{
+        top: 31px;
+        left: 770px;
+    }
 }
